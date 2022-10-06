@@ -1,11 +1,5 @@
-//Предположим, что у нас не может быть отправленно пустых полей, а также у нас всегда есть id/роль пользователя (все проверяется на фронте)
-//Поэтому мы записываем все полученные данные, без предварительной проверки
-//Каждый id отвечает заданные конкретного человека и распеределяется по всем его полям в таблице
-
-
 const dbClass = require ('../db/db')
 const db = new dbClass();
-
 
 class UserController {
     async post(req, res) {
@@ -33,12 +27,6 @@ class UserController {
         }
         res.json(db)
     }
-      
-    async check(req, res) {
-        const a = db.names.map(data => data.name)
-        res.json(a)    
-        // res.json(db.brands)
-    }  
 }
 
 module.exports = new UserController()

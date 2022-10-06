@@ -1,6 +1,6 @@
 module.exports = function(roleCheck) {
     if (!roleCheck) {
-        return res.status(401).json({message: `Role is not found.`})
+        return res.status(401).json({message: `Main role is not defined.`})
     } 
 
     return function (req, res, next) {

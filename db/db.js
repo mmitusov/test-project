@@ -1,8 +1,8 @@
 class Db {
     constructor() {
         this._names = [
-            {id: 1, name: "Mario"},
-            {id: 2, name: "Luigi"}
+            {id: 1, name: "Steve"},
+            {id: 2, name: "Tim"}
         ]
         this._birthDates = [
             {id: 1, date: "01.01.2000"},
